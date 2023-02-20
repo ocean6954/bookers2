@@ -47,7 +47,7 @@
                   <% end %>
                 </td>
                 <td><%= link_to book.title, "/books/#{book.id}", class: "link" %></td>
-                <td><%= book.body %></td>
+                <td><%= book.body  %></td>
                 <td>
                   <% if book.favorited_by?(current_user) %>
                     <%= link_to book_favorites_path(book), method: :delete do %>
